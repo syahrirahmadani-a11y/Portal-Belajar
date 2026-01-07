@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Dashboard</h1>
+  <a href="materi.html">Materi</a><br><br>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    if (localStorage.getItem("login") != "yes") {
+      location.href = "index.html";
+    }
+    function logout() {
+      localStorage.removeItem("login");
+      location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
