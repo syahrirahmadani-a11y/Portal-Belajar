@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h2>Login Portal</h2>
+  <input id="u" placeholder="username"><br>
+  <input id="p" type="password" placeholder="password"><br><br>
+  <button onclick="login()">Masuk</button>
+
+  <script>
+    function login() {
+      if (u.value == "guru" && p.value == "1234") {
+        localStorage.setItem("login", "yes");
+        location.href = "dashboard.html";
+      } else {
+        alert("Salah");
+      }
+    }
+  </script>
+</body>
+</html>
